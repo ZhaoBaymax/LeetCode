@@ -1,12 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	s := make([]int, 5)
-	fmt.Println(s)
-	fmt.Println(len(s), cap(s))
-	s = append(s, 1, 2, 3)
-	fmt.Println(s)
-	fmt.Println(len(s), cap(s))
+	a := [5]int{1, 2, 3, 4, 5}
+	t := a[3:4:5]
+	fmt.Println(t[0], cap(t))
+
 }
