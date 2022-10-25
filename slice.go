@@ -5,8 +5,11 @@ import (
 )
 
 func main() {
-	a := [5]int{1, 2, 3, 4, 5}
-	t := a[3:4:5]
-	fmt.Println(t[0], cap(t))
 
+	s1 := []int{1, 2, 3}
+	s2 := s1[1:]
+	s2[1] = 4
+	fmt.Println(s1)
+	s2 = append(s2, 5, 6, 7)
+	fmt.Println(s1)
 }
