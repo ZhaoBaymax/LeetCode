@@ -5,11 +5,14 @@ import (
 )
 
 func main() {
+	a := [3]int{0, 1, 2}
+	s := a[1:2]
 
-	s1 := []int{1, 2, 3}
-	s2 := s1[1:]
-	s2[1] = 4
-	fmt.Println(s1)
-	s2 = append(s2, 5, 6, 7)
-	fmt.Println(s1)
+	s[0] = 11
+	s = append(s, 12)
+	s = append(s, 13)
+	s[0] = 21
+
+	fmt.Println(a)
+	fmt.Println(s)
 }
