@@ -18,4 +18,5 @@ func main() {
 		fmt.Println(k, v)
 	}
 	fmt.Println("counter is ", counter)
+	fmt.Println(len(m))
 }
