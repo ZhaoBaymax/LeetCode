@@ -30,5 +30,4 @@ func main() {
 		nums = append(nums, ele1)
 	}
 	fmt.Print(zhongweishu(nums))
-
 }
